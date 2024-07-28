@@ -1,0 +1,44 @@
+CALCULATOR
+
+import java.util.Scanner;
+public class calculator{
+    public static void main(String args[]){
+        Scanner A = new Scanner(System.in);
+        while(true){
+            System.out.print("\n1 - Addition\n2 - Subraction\n3 - Multiplication\n4 - Division\n5 - Modulus");
+            System.out.print("\nEnter operation: ");
+            int d = A.nextInt();
+            if(d<0||d==0||d>6){
+                System.out.print("\nInvalid Operation");
+                break;
+            }
+            System.out.print("Enter num1: ");
+            int a = A.nextInt();
+            System.out.print("Enter num2: ");
+            int b = A.nextInt();
+            if(d==1){
+                System.out.print("Sum: "+(a+b));
+            }
+            else if(d==2){
+                System.out.print("Difference: "+(a-b));
+            }
+            else if(d==3){
+                System.out.print("Product: "+(a*b));
+            }
+            else if(d==4){
+                System.out.print("Division: "+(a/b));
+            }
+            else if(d==5){
+                System.out.print("Modulus: "+(a%b));
+            }
+            
+            System.out.print("\nEnter 1 if you wish to continue \nEnter 0 if you wish to quit");
+            System.out.print("\nEnter choice: ");
+            int i = A.nextInt();
+            if(i==0){
+                break;
+            }
+            else{continue;}
+        }
+    }
+}
