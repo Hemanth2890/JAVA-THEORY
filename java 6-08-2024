@@ -1,0 +1,121 @@
+class Student{
+    public String n;
+    Student(String n){
+        this.n=n;
+    }
+    public String toString(){
+        return n;
+    }
+}
+class main{
+    public static void main(String args[]){
+        Student[] ms=new Student[]{new Student("Dharma"),new Student("snvi"),new Student("Rupa"),new Student("Ajay")};
+        for(Student m:ms){
+            System.out.print(m+" ");
+        }
+    }
+}
+
+class main{
+    public static void main(String args[]){
+       int[] a=new int[4];
+       a[0]=10;a[1]=20;a[2]=30;a[3]=40;
+       System.out.println("Trying to access element outside the sie of array");
+       System.out.println(a[5]);
+    }
+}
+
+class main{
+    public static void main(String args[]){
+       int[][] a=new int[10][20];
+       a[0][0]=1;
+       System.out.println("a[0][0] = "+a[0][0]);
+    }
+}
+
+class main{
+    public static void main(String args[]){
+       int[][][] a=new int[10][20][30];
+       a[0][0][0]=1;
+       System.out.println("a[0][0][0] = "+a[0][0][0]);
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int[] a={3,2,1,4,5};
+        sum(a);
+    }
+    public static void sum(int[] a){
+        int s=0;
+        for(int i=0;i<a.length;i++){
+            s=s+a[i];
+        }
+        System.out.println("Sum: "+s);
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int a[]=m();
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+    public static int[] m(){
+        return new int[]{1,2,3};
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int intA[]=new int[3];
+        byte byteA[]=new byte[3];
+        short shortA[]=new short[3];
+        String[] strA=new String[3];
+        System.out.println(intA.getClass());
+        System.out.println(intA.getClass().getSuperclass());
+        System.out.println(shortA.getClass());
+        System.out.println(byteA.getClass());
+        System.out.println(strA.getClass());
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int a[]={1,2,3};
+        int ca[]=a.clone();
+        System.out.println(a==ca);
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int a[]={1,2,3};
+        int ca[]=a.clone();
+        System.out.println(a==ca);
+        for(int i=0;i<ca.length;i++){
+            System.out.print(ca[i]+" ");
+        }
+    }
+}
+class test{
+    public static void main(String args[]){
+        int a[][]={{1,2,3},{4,5,6}};
+        int ca[][]=a.clone();
+        System.out.println(a==ca);
+        /*for(int i=0;i<ca.length;i++){
+            System.out.print(ca[i]+" ");
+        }*/
+    }
+}
+
+class test{
+    public static void main(String args[]){
+        int a[][]={{1,2,3},{4,5,6}};
+        int ca[][]=a.clone();
+        System.out.println(a==ca);
+        System.out.println(a[0]==ca[0]);
+        System.out.println(a[1]==ca[1]);
+    }
+}
