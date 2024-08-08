@@ -1,0 +1,122 @@
+public class Main{
+    int x=5;
+    public static void main(String args[]){
+        Main o=new Main();
+        System.out.println(o.x);
+    }
+}
+
+public class Main{
+    int x=5;
+    public static void main(String args[]){
+        Main o=new Main();
+        Main o1=new Main();
+        System.out.println(o.x);
+        System.out.println(o1.x);
+    }
+}
+
+public class Main{
+    int x=5;
+}
+class s{
+    public static void main(String args[]){
+        Main o=new Main();
+        System.out.println(o.x);
+    }
+}
+
+public class Main{
+    int x=5;
+    public static void main(String args[]){
+        Main o=new Main();
+        o.x=40;
+        System.out.println(o.x);
+    }
+}
+
+public class Main{
+    int x=5;
+    public static void main(String args[]){
+        Main o=new Main();
+        o.x=25;
+        System.out.println(o.x);
+    }
+}
+
+public class Main{
+    final int x=5;
+    public static void main(String args[]){
+        Main o = new Main();
+        o.x=25;
+        System.out.println(o.x);
+    }
+}
+
+public class Main{
+    int x=5;
+    public static void main(String args[]){
+        Main o = new Main();
+        Main o1 = new Main();
+        o.x=25;
+        System.out.println(o.x);
+        System.out.println(o1.x);
+    }
+}
+
+public class Main{
+    String fn="John";
+    String ln="Doe";
+    int x=24;
+    public static void main(String args[]){
+        Main o = new Main();
+        System.out.println("Name: "+o.fn+" "+o.ln);
+        System.out.println("Age: "+o.x);
+    }
+}
+
+public class Main{
+    static void main(){
+        System.out.println("Hello world");
+    }
+    public static void main(String args[]){
+        main();
+    }
+}
+
+public class Main{
+    public void ft(){
+        System.out.println("The car is going fast");
+    }
+    public void speed(int ms){
+        System.out.println("Max speed is: "+ms);
+    }
+    public static void main(String args[]){
+        Main car=new Main();
+        car.ft();
+        car.speed(200);
+    }
+}
+
+public class Main{
+    int x;
+    public  Main(){
+        x=5;
+    }
+    public static void main(String args[]){
+        Main car=new Main();
+        System.out.println(car.x);
+    }
+}
+
+public class Main{
+    int x;
+    public  Main(int y){
+        x=y;
+    }
+    public static void main(String args[]){
+        Main car=new Main(5);
+        System.out.println(car.x);
+    }
+}
+
