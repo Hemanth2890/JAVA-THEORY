@@ -1,0 +1,74 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+class main{
+    public static void main(String[] args){
+        LocalDateTime md = LocalDateTime.now();
+        System.out.println("Before formatting: "+md);
+        DateTimeFormatter mfd = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String fd = md.format(mfd);
+        System.out.println("After formatting: "+mfd);
+    }
+}
+
+class emp{
+    float s = 40000;
+}
+class prog extends emp{
+    int b = 10000;
+    public static void main(String args[]){
+        prog p = new prog();
+        System.out.println("Salary: "+p.s);
+        System.out.println("Bonus: "+p.b);
+    }
+}
+
+class A{
+    void eat(){
+        System.out.println("eatin...");
+    }
+}
+class D extends A{
+    void bark(){
+        System.out.println("barking...");
+    }
+}
+class Bd extends A{
+    void weep(){
+        System.out.println("weeping...");
+    }
+}
+class T{
+    public static void main(String args[]){
+        Bd a = new Bd();
+        a.weep();
+        a.bark();
+        a.eat();
+    }
+}
+
+class A{
+    void eat(){
+        System.out.println("eatin...");
+    }
+}
+class D extends A{
+    void bark(){
+        System.out.println("barking...");
+    }
+}
+class C extends A{
+    void mew(){
+        System.out.println("mewing...");
+    }
+}
+class T{
+    public static void main(String args[]){
+        C c = new C();
+        D d = new D();
+        c.mew();
+        d.bark();
+        c.eat();
+    }
+}
+
+
